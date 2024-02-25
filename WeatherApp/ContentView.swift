@@ -21,9 +21,13 @@ struct ContentView: View {
             
             
             VStack {
+                
                 Text("Bangalore, IN")
                     .font(.system(size: 32,weight: .medium,design: .default))
                     .foregroundColor(.white)
+                Spacer()
+               
+             
                 Image(systemName: "cloud.sun.fill")
                                .renderingMode(.original)
                                .resizable()
@@ -33,7 +37,7 @@ struct ContentView: View {
                 Text("76°")
                     .font(.system(size: 48,weight: .medium,design: .default))
                     .foregroundColor(.white)
-                
+                Spacer()
                 HStack {
                     WeatherDayView(dayOfWeek: "TUE",
                                                        imageName: "cloud.sun.fill",
@@ -56,6 +60,8 @@ struct ContentView: View {
                                                        temperature: 25)
                 }
                 
+                
+                Spacer()
                 Button(action: {
                    // Your code here
                  }) {
@@ -66,6 +72,7 @@ struct ContentView: View {
                                    .font(.system(size: 20, weight: .bold))
                                    .cornerRadius(10)
                  }
+             
                
             }
            
